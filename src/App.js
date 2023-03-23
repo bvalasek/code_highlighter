@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import CodeBlock from './components/CodeBlock'
+
 
 function App() {
+  const codeString = `
+  import SyntaxHighlighter from 'react-syntax-highlighter';
+import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+
+const CodeBlock = ({ codeString }) => {
+    return (
+        <SyntaxHighlighter language="javascript" style={docco}>
+            {codeString}
+        </SyntaxHighlighter>
+    );
+};
+
+export default CodeBlock;
+`
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h6>lorem</h6>
+      <CodeBlock codeString={codeString} />
     </div>
   );
 }
