@@ -1,6 +1,6 @@
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { docco, atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 // great article, your goal is to use highlighter but also have ability 
 // to subhighlight important section. What I mean by sections 
@@ -12,8 +12,8 @@ import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 const CodeBlock = ({ codeString }) => {
     return (
         <SyntaxHighlighter
-            language="javascript"
-            style={docco}
+            language="jsx"
+            style={atomOneDark}
             showLineNumbers
             showInlineLineNumbers
         >
