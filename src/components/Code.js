@@ -8,7 +8,7 @@ export default function Code({ code, language }) {
     return (
         <div className="Code">
             <h2> Code Syntax Block {language}</h2>
-            <pre>
+            <pre className="line-numbers">
                 <code className={`language-${language}`}>{code}</code>
             </pre>
         </div>

@@ -1,8 +1,10 @@
 import './App.css';
 import Code from './components/Code';
 import CodeBlock from './components/CodeBlock';
-import "./css/prism.css";
-import 'prismjs'
+import Prism from 'prismjs';
+import 'prismjs/plugins/line-numbers/prism-line-numbers';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+import "./prism/prism.css";
 
 //Component Code.js
 const JSCode = `const App = props => {
