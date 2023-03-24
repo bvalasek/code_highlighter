@@ -7,6 +7,8 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/plugins/line-highlight/prism-line-highlight';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.css';
 import "./prism/prism.css";
+import "./prism/prism-theme-k88hudson.css";
+// import './prism/synthwave84.css'
 
 //Component Code.js
 const JSCode = `const App = props => {
