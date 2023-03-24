@@ -1,9 +1,11 @@
 import './App.css';
 import Code from './components/Code';
 import CodeBlock from './components/CodeBlock';
-import Prism from 'prismjs';
+// import Prism from 'prismjs';
 import 'prismjs/plugins/line-numbers/prism-line-numbers';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+import 'prismjs/plugins/line-highlight/prism-line-highlight';
+import 'prismjs/plugins/line-highlight/prism-line-highlight.css';
 import "./prism/prism.css";
 
 //Component Code.js
@@ -46,8 +48,8 @@ export default CodeBlock;
     <div className="App">
       <h6>lorem</h6>
       {/* <CodeBlock codeString={codeString} /> */}
-      <Code code={JSCode} language="javascript" />
-      <Code code={htmlCode} language="html" />
+      <Code code={JSCode} dataLines={'2 - 6'} language="javascript" />
+      <Code code={htmlCode} dataLines={'2'} language="html" />
     </div>
   );
 }
