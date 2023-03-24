@@ -6,6 +6,11 @@ import 'prismjs/plugins/line-numbers/prism-line-numbers';
 import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
 import 'prismjs/plugins/line-highlight/prism-line-highlight';
 import 'prismjs/plugins/line-highlight/prism-line-highlight.css';
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+
+import 'prismjs/plugins/toolbar/prism-toolbar.js';
+import 'prismjs/plugins/toolbar/prism-toolbar.css';
+import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js';
 import "./prism/prism.css";
 import "./prism/prism-theme-k88hudson.css";
 // import './prism/synthwave84.css'
