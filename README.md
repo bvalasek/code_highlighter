@@ -31,3 +31,8 @@ Potom som este chcel skusit toto https://css-tricks.com/syntax-highlighting-pris
         - [] support own subsection highlights, to reveal full code but immediately gain users focus to these extra highlighted sections.
         - [] collapsible/ expandable
         - [] multiple files
+
+--------29.3.23---------
+idem skusat refactor_records pre Simple Records
+
+vytvorim componenty Loop_through_range.js

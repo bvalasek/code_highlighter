@@ -13,6 +13,7 @@ import 'prismjs/plugins/toolbar/prism-toolbar.css';
 import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js';
 import "./prism/prism.css";
 import "./prism/prism-theme-k88hudson.css";
+import Loop_through_range from './playgrounds/Loop_through_range';
 // import './prism/synthwave84.css'
 
 //Component Code.js
@@ -53,10 +54,12 @@ export default CodeBlock;
 `
   return (
     <div className="App">
+
       <h6>lorem</h6>
+      <Loop_through_range />
       {/* <CodeBlock codeString={codeString} /> */}
-      <Code code={JSCode} dataLines={'2 - 6'} language="javascript" />
-      <Code code={htmlCode} dataLines={'2'} language="html" />
+      {/* <Code code={JSCode} dataLines={'2 - 4,6-7'} language="javascript" /> */}
+      {/* <Code code={htmlCode} dataLines={'2'} language="html" /> */}
     </div>
   );
 }
