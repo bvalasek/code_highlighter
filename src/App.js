@@ -14,6 +14,7 @@ import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.js';
 import "./prism/prism.css";
 import "./prism/prism-theme-k88hudson.css";
 import Loop_through_range from './playgrounds/Loop_through_range';
+import Loop_through_datetime_rande from './playgrounds/Loop_through_datetime_rande';
 // import './prism/synthwave84.css'
 
 //Component Code.js
@@ -56,7 +57,8 @@ export default CodeBlock;
     <div className="App">
 
       <h6>lorem</h6>
-      <Loop_through_range />
+      <Loop_through_datetime_rande />
+      {/* <Loop_through_range /> */}
       {/* <CodeBlock codeString={codeString} /> */}
       {/* <Code code={JSCode} dataLines={'2 - 4,6-7'} language="javascript" /> */}
       {/* <Code code={htmlCode} dataLines={'2'} language="html" /> */}
