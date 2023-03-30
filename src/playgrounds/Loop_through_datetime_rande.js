@@ -45,8 +45,16 @@ const Loop_through_datetime_rande = ({ }) => {
         return acc;
     }, {});
 
-    console.log(groupedRecords);
+    // console.log(groupedRecords);
 
+    const recordsWithTotalItems = Object.entries(groupedRecords).map(([date, records]) => ({
+        date,
+        records,
+        hasData: true,
+        totalItems: records.length
+    }));
+
+    console.log(recordsWithTotalItems);
 
     // const groupedData = data.reduce((acc, curr) => {
     //     const date = curr.date.split(' ')[0];
