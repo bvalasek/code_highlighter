@@ -31,12 +31,37 @@ const List_records_with_times_between_groups = ({ }) => {
         const nextFirstRecordTime = nextFirstRecord ? new Date(nextFirstRecord.doneAt).getTime() : null;
         const currFirstRecordTime = new Date(records[0].doneAt);
         const currLastRecordTime = new Date(records[records.length - 1].doneAt);
+
+        // check duration between last item of previous group and first item of next group,
+        // if the time is longer than a day, than insert new object to the array
         if (prevLastRecordTime && currFirstRecordTime - prevLastRecordTime > 86400000) {
+            // calculate expected next day, just to check if next value is on next day date,
+            // if so, we will set days_between: 0
+            var someDate = new Date(prevLastRecordTime);
+            someDate.setTime(someDate.getTime() + (24 * 60 * 60 * 1000));
+
+            // push new object to our array
             acc.push({
-                previousItemTime: prevLastRecordTime,
+                prevItemTime: new Date(prevLastRecord.doneAt),
                 nextItemTime: currFirstRecordTime,
-                nextItemTime: (new Date(currFirstRecordTime - prevLastRecordTime).getDate()) - 1,
-                // duration: new Date(currFirstRecordTime).getDate()
+
+                prevItemDate: new Date(prevLastRecord.doneAt).toDateString(),
+                nextItemDate: currFirstRecordTime.toDateString(),
+                expectedNextDayAfterPrevItemDate: someDate,
+                isNextSameAsExpected: someDate.toDateString() === currFirstRecordTime.toDateString(),
+
+                duration: new Date(currFirstRecordTime - new Date(prevLastRecord.doneAt)).getTime(),
+                // duration: (currFirstRecordTime - new Date(prevLastRecord.doneAt)) / (1000 * 60 * 60 * 24), // 3.0416666666666665
+
+
+
+
+
+
+                // isNextSameAsExpected: someDate.getDate(), // number 2
+                // diffDays: Math.ceil(Math.abs(currFirstRecordTime - prevLastRecordTime) / (1000 * 60 * 60 * 24)),
+                // nextItemTime: (new Date(currFirstRecordTime - prevLastRecordTime).getDate()) - 1,
+                // duration: new Date(currFirstRecordTime).getDate(),
                 // duration: (new Date(currFirstRecordTime).toLocaleDateString().getTime - new Date(prevLastRecordTime).toLocaleDateString().getTime) / (1000 * 60 * 60 * 24),
                 // new Date().getTime(currFirstRecordTime - prevLastRecordTime),
             });
