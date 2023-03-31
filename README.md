@@ -36,3 +36,14 @@ Potom som este chcel skusit toto https://css-tricks.com/syntax-highlighting-pris
 idem skusat refactor_records pre Simple Records
 
 vytvorim componenty Loop_through_range.js
+
+--------31.3.23---------
+List_records_with_times_between_groups.js
+vvv
+funguje ale neskor sa ukazalo ze rozbil hned na zaciatku tie grupy hned ked doplnil ten object takze skusim dlasie riesenie
+
+List_groups_with_break_groups.js
+vvv
+tu skusim dalsiu vec, nechce s ami to pisat, prestuduj si kod a pochopis
+
+--------29.3.23---------

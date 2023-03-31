@@ -16,6 +16,7 @@ import "./prism/prism-theme-k88hudson.css";
 import Loop_through_range from './playgrounds/Loop_through_range';
 import Loop_through_datetime_rande from './playgrounds/Loop_through_datetime_rande';
 import List_records_with_times_between_groups from './playgrounds/List_records_with_times_between_groups';
+import List_groups_with_break_groups from './playgrounds/List_groups_with_break_groups';
 // import './prism/synthwave84.css'
 
 //Component Code.js
@@ -58,7 +59,8 @@ export default CodeBlock;
     <div className="App">
 
       <h6>lorem</h6>
-      <List_records_with_times_between_groups />
+      <List_groups_with_break_groups />
+      {/* <List_records_with_times_between_groups /> */}
       {/* <Loop_through_datetime_rande /> */}
       {/* <Loop_through_range /> */}
       {/* <CodeBlock codeString={codeString} /> */}
