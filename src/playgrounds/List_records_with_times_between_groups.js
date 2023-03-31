@@ -29,22 +29,25 @@ const List_records_with_times_between_groups = ({ }) => {
         const nextFirstRecord = nextRecords[0];
         const prevLastRecordTime = prevLastRecord ? new Date(prevLastRecord.doneAt).getTime() : null;
         const nextFirstRecordTime = nextFirstRecord ? new Date(nextFirstRecord.doneAt).getTime() : null;
-        const currFirstRecordTime = new Date(records[0].doneAt).getTime();
-        const currLastRecordTime = new Date(records[records.length - 1].doneAt).getTime();
+        const currFirstRecordTime = new Date(records[0].doneAt);
+        const currLastRecordTime = new Date(records[records.length - 1].doneAt);
         if (prevLastRecordTime && currFirstRecordTime - prevLastRecordTime > 86400000) {
             acc.push({
                 previousItemTime: prevLastRecordTime,
                 nextItemTime: currFirstRecordTime,
-                // duration: nextFirstRecordTime - currLastRecordTime,
+                nextItemTime: (new Date(currFirstRecordTime - prevLastRecordTime).getDate()) - 1,
+                // duration: new Date(currFirstRecordTime).getDate()
+                // duration: (new Date(currFirstRecordTime).toLocaleDateString().getTime - new Date(prevLastRecordTime).toLocaleDateString().getTime) / (1000 * 60 * 60 * 24),
+                // new Date().getTime(currFirstRecordTime - prevLastRecordTime),
             });
         }
         acc.push(...records);
-        if (nextFirstRecordTime && nextFirstRecordTime - currLastRecordTime > 86400000) {
-            acc.push({
-                previousItemTime: currLastRecordTime,
-                nextItemTime: nextFirstRecordTime,
-            });
-        }
+        // if (nextFirstRecordTime && nextFirstRecordTime - currLastRecordTime > 86400000) {
+        //     acc.push({
+        //         previousItemTime: currLastRecordTime,
+        //         nextItemTime: nextFirstRecordTime,
+        //     });
+        // }
         return acc;
     }, []);
 
