@@ -18,6 +18,7 @@ import Loop_through_datetime_rande from './playgrounds/Loop_through_datetime_ran
 import List_records_with_times_between_groups from './playgrounds/List_records_with_times_between_groups';
 import List_groups_with_break_groups from './playgrounds/List_groups_with_break_groups';
 import ListGroup_Ateempt_6 from './playgrounds/ListGroup_Ateempt_6';
+import ListGroup_Atempt_8 from './playgrounds/ListGroup_Atempt_8';
 // import './prism/synthwave84.css'
 
 //Component Code.js
@@ -60,7 +61,8 @@ export default CodeBlock;
     <div className="App">
 
       <h6>lorem</h6>
-      <ListGroup_Ateempt_6 />
+      <ListGroup_Atempt_8 />
+      {/* <ListGroup_Ateempt_6 /> */}
       {/* <List_groups_with_break_groups /> */}
       {/* <List_records_with_times_between_groups /> */}
       {/* <Loop_through_datetime_rande /> */}
