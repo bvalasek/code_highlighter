@@ -46,4 +46,6 @@ List_groups_with_break_groups.js
 vvv
 tu skusim dalsiu vec, nechce s ami to pisat, prestuduj si kod a pochopis
 
+btw mas poznamku v notes ako "pokus 5"
+
 --------29.3.23---------
