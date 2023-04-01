@@ -34,7 +34,7 @@ const ListGroup_Atempt_8 = ({ }) => {
                 // breakDate.setDate(breakDate.getDate() + 1);
 
                 result[`${prevDate}-break`] = {
-                    startTime: records[index - 1].doneAt,
+                    startTime: result[prevDate].lastTime,
                     endTime: breakDate.toISOString()
                 };
             }
