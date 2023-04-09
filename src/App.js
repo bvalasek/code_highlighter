@@ -20,6 +20,7 @@ import List_groups_with_break_groups from './playgrounds/List_groups_with_break_
 import ListGroup_Ateempt_6 from './playgrounds/ListGroup_Ateempt_6';
 import ListGroup_Atempt_8 from './playgrounds/ListGroup_Atempt_8';
 
+import RichTextEdit_V1 from './components/RichTextEdit_V1';
 // Google Maps for React
 // import GoogleMapReact from 'google-map-react';
 
@@ -73,6 +74,7 @@ export default CodeBlock;
     <div className="App">
 
       <h6>lorem</h6>
+      <RichTextEdit_V1 />
       {/* <ListGroup_Atempt_8 /> */}
       {/* <ListGroup_Ateempt_6 /> */}
       {/* <List_groups_with_break_groups /> */}
@@ -94,8 +96,8 @@ export default CodeBlock;
       </div> */}
 
       {/* check also https://meyerweb.com/eric/tools/css/reset/ */}
-      <Code code={JSCode} dataLines={'2 - 4,6-7'} language="javascript" />
-      <Code code={htmlCode} dataLines={'2'} language="html" />
+      {/* <Code code={JSCode} dataLines={'2 - 3,6-7'} language="javascript" />
+      <Code code={htmlCode} dataLines={'2'} language="html" /> */}
     </div>
   );
 }

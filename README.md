@@ -49,3 +49,12 @@ tu skusim dalsiu vec, nechce s ami to pisat, prestuduj si kod a pochopis
 btw mas poznamku v notes ako "pokus 5"
 
 --------29.3.23---------
+
+- google maps iframe
+- asi nejake zmeny v code highlighte, uz sam neviem co som robil, ale fixol som Line-highlight misplacement v Safari browsri
+
+--------9.4.23---------
+idem skusit WISWIG editor 1. prvy pokus bude Ck editor z tohto videa a nasledne Html React parser https://www.youtube.com/watch?v=kykC7i9VUE4 - nova komponenta RichTextEdit_V1.js
+
+    2. pokus bude react-mui-draft-wysiwyg
+    https://kelsier90.github.io/react-mui-draft-wysiwyg/
