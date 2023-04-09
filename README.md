@@ -56,10 +56,16 @@ btw mas poznamku v notes ako "pokus 5"
 --------9.4.23---------
 idem skusit WISWIG editor
 
-1. prvy pokus bude Ck editor z tohto videa a nasledne Html React parser https://www.youtube.com/watch?v=kykC7i9VUE4 - nova komponenta RichTextEdit_V1.js - btw vysku zmenit pridanim CSS pre
-   .ck-editor\_\_editable_inline {
-   min-height: 400px;
-   }
+1. prvy pokus bude Ck editor z tohto videa a nasledne Html React parser https://www.youtube.com/watch?v=kykC7i9VUE4
+
+- [new component] nova komponenta RichTextEdit_V1.js
+- [style change] btw vysku zmenit pridanim CSS pre
+  .ck-editor\_\_editable_inline {
+  min-height: 400px;
+  }
+- [passed test on mobile] otestovane na mobile, defaultne je responzivny takze nezabera vela zbytocneho miesta
+- [suggestion for mobile screen] mozno by si na mobile mohol zobrazovat osekany toolbar pretoye je tam fakt malo miesta. Indentaciu by som vybral do popredia na mobile, teraz sa schovava a je to takmer nepouyitelne, ostatne neschovan eprvky su pouzitelne
+- [must have to parse html tags on front end] - use html-react-parser
 
 2. pokus bude react-mui-draft-wysiwyg
    https://kelsier90.github.io/react-mui-draft-wysiwyg/

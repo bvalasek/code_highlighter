@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-
+import parse from 'html-react-parser';
 
 const RichTextEdit_V1 = ({ }) => {
     const [text, setText] = React.useState('');
@@ -20,7 +20,7 @@ const RichTextEdit_V1 = ({ }) => {
             </div>
             <div>
                 <h1>Content</h1>
-                <p>{text}</p>
+                <p>{parse(text)}</p>
             </div>
         </ div>
     )
