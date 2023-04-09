@@ -31,10 +31,9 @@ const ListGroup_Atempt_8 = ({ }) => {
 
             if (prevDate !== date) {
                 const breakDate = new Date(records[index].doneAt);
-                // breakDate.setDate(breakDate.getDate() + 1);
 
                 result[`${prevDate}-break`] = {
-                    startTime: result[prevDate].lastTime,
+                    startTime: records[index - 1].doneAt,
                     endTime: breakDate.toISOString()
                 };
             }
@@ -45,6 +44,8 @@ const ListGroup_Atempt_8 = ({ }) => {
             message: record.message,
             isDone: record.isDone
         });
+
+        result[date].groupRecords.sort((a, b) => new Date(a.doneAt) - new Date(b.doneAt));
 
         result[date].length++;
 
